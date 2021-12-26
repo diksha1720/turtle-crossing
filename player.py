@@ -19,5 +19,5 @@ class Player(Turtle):
         self.forward(10)
 
     def restart(self):
-        self.move_speed *= 0.9
+        self.move_speed *= 0.6
         self.goto(STARTING_POSITION)

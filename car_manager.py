@@ -12,11 +12,12 @@ class CarManager(Turtle):
 
     def create_car(self):
         new_car = Turtle()
+        # new_car.hideturtle()
         new_car.color(random.choice(COLORS))
         new_car.shape("square")
         new_car.shapesize(stretch_wid=1, stretch_len=3)
         new_car.penup()
-        y_val = random.randint(-240, 240)
+        y_val = random.randint(-230, 230)
         new_car.goto(280, y_val)
         new_car.setheading(180)
         self.cars.append(new_car)

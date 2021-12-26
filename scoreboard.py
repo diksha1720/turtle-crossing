@@ -14,6 +14,7 @@ class Scoreboard(Turtle):
 
     def score_update(self):
         self.clear()
+        self.shape("square")
         self.write(f"Level : {self.level}", align="center", font=FONT)
 
     def add_point(self):
